@@ -23,8 +23,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Setup nodeJS
       uses: actions/setup-nodejs@v1
-      with: 
-        node-version: 'v8.10.0'
     - name: clone the repo
       run: git clone https://github.com/sumangala028/learn-github-action.git
     - name: Go to the project folder
