@@ -16,12 +16,21 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [10.x]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Check out repository
+      uses: actions/checkout@v2
+    - name: Setup nodeJS
+      uses: actions/setup-nodejs@v1
+      with: 
+        node-version: 'v8.10.0'
     - name: clone the repo
       run: git clone https://github.com/sumangala028/learn-github-action.git
-    - name: execute the react project
-      run : npm start
+    - name: execute the files
+      run: |
+        npm build
+        npm test
+      
+      
  
