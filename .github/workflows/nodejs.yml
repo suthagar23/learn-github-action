@@ -31,8 +31,7 @@ jobs:
       run: cd learn-github-action
     - name: Build the files
       run: npm build
-    - name: Test the files
-      run: npm run test
+    
       
       
  
