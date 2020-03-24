@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [8.x]
 
     steps:
     - name: Check out repository
@@ -27,6 +27,8 @@ jobs:
         node-version: 'v8.10.0'
     - name: clone the repo
       run: git clone https://github.com/sumangala028/learn-github-action.git
+    - name: Go to the project folder
+      run: cd learn-github-action
     - name: Build the files
       run: npm build
     - name: Test the files
