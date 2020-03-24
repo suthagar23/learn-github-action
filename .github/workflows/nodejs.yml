@@ -27,8 +27,10 @@ jobs:
         node-version: ${{matrix.node-version}}
     - name: clone the repo
       run: git clone https://github.com/sumangala028/learn-github-action.git
-    - name: Go to the project folder
+    - name: Go to the cloned folder
       run: cd learn-github-action
+    - name: Go to the project folder
+      run: cd hello-world
     - name: Build the files
       run: npm run build
     - name: Test the files
