@@ -27,10 +27,10 @@ jobs:
         node-version: 'v8.10.0'
     - name: clone the repo
       run: git clone https://github.com/sumangala028/learn-github-action.git
-    - name: execute the files
-      run: |
-        npm build
-        npm test
+    - name: Build the files
+      run: npm build
+    - name: Test the files
+      run: npm test
       
       
  
