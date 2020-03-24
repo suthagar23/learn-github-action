@@ -30,7 +30,9 @@ jobs:
     - name: Go to the project folder
       run: cd learn-github-action
     - name: Build the files
-      run: npm build
+      run: npm run build
+    - name: Test the files
+      run: npm run test
     
       
       
