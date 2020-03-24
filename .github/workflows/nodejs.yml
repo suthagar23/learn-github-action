@@ -33,8 +33,7 @@ jobs:
           cd hello-world
     - name: Build the files
       run: npm build
-#- name: Test the files
-      #run: npm test
+
     
       
       
